@@ -651,6 +651,8 @@ endif
 # Options To Invoke Tools
 #----------------------------------------------------------
 
+EXTRA_LD_OPTIONS := -lcurses -ltinfo
+
 ifdef EXTRA_LD_OPTIONS
 LD.Flags += $(EXTRA_LD_OPTIONS)
 endif

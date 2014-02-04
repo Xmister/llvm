@@ -32,7 +32,9 @@ functionality.
 --includedir=%{_includedir} \
 --libdir=%{_libdir} \
 --enable-optimized \
---enable-assertions 
+--enable-assertions \
+--enable-curses=no \
+--enable-terminfo=no
 make tools-only
 
 %install

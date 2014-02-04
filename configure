@@ -5671,14 +5671,14 @@ _ACEOF
 # Check whether --enable-terminfo was given.
 if test "${enable_terminfo+set}" = set; then
   enableval=$enable_terminfo; case "$enableval" in
-    yes) llvm_cv_enable_terminfo="yes" ;;
+    yes) llvm_cv_enable_terminfo="no" ;;
     no)  llvm_cv_enable_terminfo="no"  ;;
     *) { { echo "$as_me:$LINENO: error: Invalid setting for --enable-terminfo. Use \"yes\" or \"no\"" >&5
 echo "$as_me: error: Invalid setting for --enable-terminfo. Use \"yes\" or \"no\"" >&2;}
    { (exit 1); exit 1; }; } ;;
   esac
 else
-  llvm_cv_enable_terminfo="yes"
+  llvm_cv_enable_terminfo="no"
 fi
 
 
@@ -12566,7 +12566,7 @@ if test "$ac_res" != no; then
   test "$ac_res" = "none required" || LIBS="$ac_res $LIBS"
 
 cat >>confdefs.h <<\_ACEOF
-#define HAVE_TERMINFO 1
+#define HAVE_TERMINFO 0
 _ACEOF
 
 fi
